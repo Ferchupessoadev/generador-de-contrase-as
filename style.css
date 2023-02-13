@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+
+body {
+    background:#111;
+}
+
+nav {
+    background: #48e;
+    color:#fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    height: 200px;
+    gap:20px;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-caracteres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px; 
+    width: max-content; 
+}
+
+.container-caracteres__p {
+    font-size:22px;
+    font-family:cursive;
+    font-weight: bold;
+    color:white;
+}
+
+.caracteres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    background: #aaa;
+    cursor: pointer;
+    user-select: none;
+}
+
+.caracteres:hover {
+    background:#999;
+    color:#111;
+}
+
+.caracteres-p {
+    font-size: 18px;
+    padding:10px;
+    user-select: none;
+    color:#000;
+}
+
+.show-password {
+    width:80%;
+    height:140px;
+    margin:auto;
+    background:#333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password {
+    display:flex;
+    gap:30px;
+    padding: 10px;
+    background-color: #333;
+    color:white;
+    font-size: 24px;
+}
+
+.container-msg-copy {
+    position: fixed;
+    width: 90px;
+    color:white;
+    height: 40px;
+    display: none;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    transform:translate(0,-20px)
+}
+
+.container-triangulo {
+    transform: translate(-30px,17px);
+}
+
+.triangulo {
+     width: 0; 
+     height: 0; 
+     transform: rotate(90deg);
+     border-left: 10px solid #222;
+     border-top: 5px solid transparent;
+     border-bottom: 5px solid transparent; 
+}
+
+.copy-btn {
+    cursor: pointer;
+}
+
+.hide-copy-btn {
+    display: none;
+}
+
+.password-copied {
+    display:none;
+}
+
+.password-copied i {
+    color:#0f4;
+}
+
+.copied {
+    display:flex;
+}
+
+
+
